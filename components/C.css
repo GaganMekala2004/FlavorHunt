@@ -1,0 +1,101 @@
+/* General Styles for Expanded Card */
+.recipe-card {
+    transition: all 0.4s ease; /* Smooth transition for all properties */
+  }
+  
+  .recipe-card.expanded {
+    width: 150%; /* Adjusted width to be smaller */
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px; /* Reduced padding */
+    margin: 20px auto; /* Center the card */
+  }
+  
+  .recipe-card.expanded:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image */
+  .recipe-image {
+    width: 100%;
+    height: 200px; /* Reduced image height */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: all 0.4s ease; /* Smooth image transition */
+  }
+  
+  /* Header of the card (Title) */
+  .card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    transition: padding 0.3s ease; /* Smooth transition for header padding */
+  }
+  
+  .card-header h3 {
+    font-size: 22px; /* Reduced font size */
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    flex: 1;
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+  }
+  
+  /* Tags */
+  .card-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .card-tags span {
+    background-color: #f0f0f0;
+    padding: 6px 10px; /* Reduced padding */
+    border-radius: 16px;
+    font-size: 14px;
+    color: #777;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .card-tags span:hover {
+    background-color: #ff5a5f;
+    color: #fff;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Card Details (Ingredients, Preparation) */
+  .card-details h4 {
+    font-size: 16px; /* Reduced font size */
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .card-details ul,
+  .card-details ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .card-details li {
+    font-size: 14px; /* Reduced font size */
+    color: #555;
+    margin-bottom: 6px; /* Reduced margin */
+  }
+  
+  .card-details p {
+    font-size: 14px; /* Reduced font size */
+    color: #555;
+    line-height: 1.5; /* Adjusted line height */
+  }
+  
+  /* Optional: Adding spacing between sections */
+  .card-details h4 + ul,
+  .card-details h4 + ol {
+    margin-top:8px;
+}

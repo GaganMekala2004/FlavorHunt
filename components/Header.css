@@ -1,0 +1,98 @@
+/* General header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo styling with separate colors for Flavor and Hunt */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .logo svg {
+    margin-right: 8px;
+  }
+  
+  .logo .flavor {
+    color: #FF6347; /* Tomato Red */
+  }
+  
+  .logo .hunt {
+    color: #32CD32; /* Lime Green */
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  .auth-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Common style */
+  .auth-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Login - Red */
+  .auth-links .login-btn {
+    background-color: #FF6347; /* Tomato Red */
+  }
+  
+  .auth-links .login-btn:hover {
+    background-color: #32CD32; /* Lime Green */
+  }
+  
+  /* Register - Green */
+  .auth-links .register-btn {
+    background-color: #32CD32; /* Lime Green */
+  }
+  
+  .auth-links .register-btn:hover {
+    background-color: #FF6347; /* Tomato Red */
+  }
+  
+  /* Search section includes input and button */
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Search button styling */
+.search-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #FF6347;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #32CD32;
+}
