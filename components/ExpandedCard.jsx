@@ -40,7 +40,11 @@ const ExpandedCard = ({ image, title, tags = [], extendedIngredients = [], instr
           <section className="instructions-section">
             <h4>Preparation</h4>
             {instructions ? (
-              <div dangerouslySetInnerHTML={{ __html: instructions }} />
+              <div>
+                {instructions.split('\n').map((line, idx) => (
+                  <p key={idx}>{line}</p>
+                ))}
+              </div>
             ) : (
               <p>No instructions provided.</p>
             )}
